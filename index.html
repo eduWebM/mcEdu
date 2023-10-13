@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Eduardo Sánchez">
+  <meta name="copyright" content="eduWebM">
+  <title>Bienvenidos a McEdu</title>
+  <meta name="description" content="Conoce mi proyecto TPV (Terminal Punto de Venta) enfocado en una pizzería online utilizando HTML, CSS y JavaScript como herramientas de desarrollo web">
+  <meta name="keywords" content="tpv, pizzería, hamburguesería, pizza, hamburguesa, perrito, burrito">
+  <!-- Favicon -->
+  <link rel="icon" type="images/png" href="imgPizza/logotipo2.png" size="48x48">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="cssPizza/estilos.css">
+  <!-- Fuentes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src="imgPizza/logotipo2.png" alt="logotipo">	
+		<h1>Bienvenidos a McEduWebM</h1>
+		<img src="imgPizza/gorro.png" alt="gorro">
+	</header>
+	<main>
+	<section class="botones">
+		<a href="#menu"><button onclick="mostrarIngredientes(1, 'pizza')">
+			<img src="imgPizza/pizza.png" alt="pizza" title="Pizza">
+			<h2>Pizza (9€)</h2>
+		</button></a>
+		<a href="#menu"><button onclick="mostrarIngredientes(2, 'hamburguesa')">
+			<img src="imgPizza/hamburguesa.png" alt="hamburguesa" title="Hamburguesa">
+			<h2>Hamburguesa (8€)</h2>
+		</button></a>
+		<a href="#menu"><button onclick="mostrarIngredientes(3, 'ensalada')">
+			<img src="imgPizza/ensalada.png" alt="ensalada" title="Ensalada">
+			<h2>Ensalada (5€)</h2>
+		</button></a>
+		<a href="#menu"><button onclick="mostrarIngredientes(4, 'perrito')">
+			<img src="imgPizza/perrito.png" alt="perrito" title="Perrito">
+			<h2>Perrito (4€)</h2>
+		</button></a>
+		<a href="#menu"><button onclick="mostrarIngredientes(5, 'burrito')">
+			<img src="imgPizza/burrito.png" alt="burrito" title="Burrito">
+			<h2>Burrito (6€)</h2>
+		</button></a>
+	</section>
+	<h2 id="menu"></h2>
+	<div id="imgResul"><img src="" alt=""></div>
+	<h3 class="seleccion">Seleccione los ingredientes:</h3>
+	<section id="resultado"></section>
+    <section id="divTotal">
+		<fieldset>
+        	<legend>Total Pedido</legend>
+        	<input type="text" id="display" readonly><span class="euro">€</span>
+			<button class="btnFactura" title="Pasar por caja" onclick="guardarIngredientes()"><img src="imgPizza/caja.png" alt="caja registradora"></button>
+    	</fieldset>
+	</section>
+	</main>
+	<footer>© 2023 McEduWebM</footer>
+	<!-- Código JavaScript -->
+	<script src="jsPizza/codigo.js" defer></script>
+	</body>
+</html>

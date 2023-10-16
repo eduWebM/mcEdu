@@ -95,7 +95,7 @@ function mostrarIngredientes(valor, imagenBtn){
     total = 0.00;
     valorOp = valor;
 
-    imgResultado.setAttribute("src", "../imgPizza/"+imagenBtn+".png");
+    imgResultado.setAttribute("src", "imgPizza/"+imagenBtn+".png");
     imgResultado.setAttribute("alt", imagenBtn);
 
     resultadoMenu.innerHTML = "";

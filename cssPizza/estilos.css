@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
+    background-attachment: fixed;
     padding: 20px 0;
     min-height: 100vh;
 }
